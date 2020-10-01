@@ -1,19 +1,29 @@
+run = @make -C ../../scripts dir=$(shell pwd)
+
 all: install
 
+clean:
+	@$(run) clean
+
 install:
-	@true
+	@$(run) install
 
 test:
-	@true
+	@$(run) test
 
-build:
-	@true
+prepare-build:
+	@$(run) prepare-build
+
+build: clean prepare-build
+	@$(run) build
 
 publish:
-	@true
+	@$(run) publish
 
 .PHONY: all \
 		build \
+		clean \
 		install \
 		test \
+		prepare-build \
 		publish

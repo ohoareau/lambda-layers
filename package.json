@@ -1,0 +1,8 @@
+{
+  "name": "project",
+  "license": "MIT",
+  "devDependencies": {
+    "@ohoareau/microgen": "^0.22.6",
+    "@ohoareau/microgen-plugin-monorepo-lambda-layers": "^0.1.5"
+  }
+}

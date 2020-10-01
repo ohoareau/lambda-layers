@@ -1,2 +1,7 @@
 .idea/
+node_modules/
 /layers/*/build/
+coverage/
+*.log
+.DS_Store
+
